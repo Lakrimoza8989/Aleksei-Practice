@@ -1,0 +1,83 @@
+.Topbar {
+    background-color: bisque;     /* color of the navmenu background */
+    display: flex;                  /* to make nav menu flexibale for changing */
+    justify-content: center;
+    height: 70px;                   /* the height of the menu */
+    align-items: center;            /* the text is aligned exactly to the left-right, bottom-top */
+}
+
+.Topbar a {
+    color: palevioletred;             /* color of the text in the nev menu */
+    text-decoration-line: none;     /* remove lines under the text */
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 35px;             /* this is indentation between words in the nav menг by the right side */ 
+
+}
+
+.poster {
+    width: 100%;                    /* I maked it to stretch the image across the full width*/
+    height: 55vh;                   /* cut height, cuz it was too large originally */
+    object-fit: cover;              /* The image was streth by default. I "cut" it... */
+    object-position: bottom;        /* ... cut it from the top*/
+        
+}
+
+.textbox {
+    display: flex;                      /* each element inside of this container will line up horizontalyy*/
+    justify-content: space-between;     /* distributes the inner elements across the full width */
+    padding: 40px 60px;                 /* I made it to make spaces between contents from the top and botton */
+    gap: 20px;                          /* this is the space between cards */
+    background-color: aquamarine;     /* the background of the textbox box */
+
+}
+
+.box {                              /* 'Product cards inside of textbox container */
+    flex: 1;                        /* makes equal share of space inside a flex container*/
+    background-color: white;      
+    border-radius: 12px;            /* "makeup" -  corners */
+    padding: 20px;                  /* space inside the box between the content and the edges */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);  
+    text-align: center;             /* making all content inside of the cadrs to the center */
+}
+
+.box h1 {
+    font-size: 22px;
+    color: rgb(255, 39, 150);
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.box img {
+    width: 100%;                     /* makes the image stretch to 100% of the width */
+    max-height: 200px;               /* limits the image’s height to a maximum of 200 pixels */
+    object-fit: cover;               /* scales the image to completely cover the space */
+    border-radius: 8px;              /* agaim "makeup" */
+}
+
+.TableBox {
+    max-width: 1000px;              /* makes the maximum width */
+    margin: 80px auto;              /* (80px) - top and bottom margin, (auto) -  balance of the left and right margins */
+    padding-left: 20px;
+}
+
+th, td {                            /* this is table styling. Visual borders, padding, and text alignment inside the cells  */
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: bisque;
+    color: rgb(255, 39, 150);
+  }
+
+  td {
+    background-color: aquamarine
+    ;
+  }
